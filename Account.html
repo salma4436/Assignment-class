@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var id;
+        var name;
+        var amount;
+        var total=1000;
+       
+        function diwaan(){
+            id=prompt("Enter your IDNO:");
+            name=prompt("Enter your name:");
+            
+            
+            document.write("Your IDNO IS:"+id+"<br>Your Name IS:"+name);
+            // document.write("Your Name IS:"+name+"\n");
+            // document.write("Your amount IS:"+total+"\n");
+        }
+        function haraaga(){
+            document.write("<br>Haraagaagu waa:"+total);
+        }
+        function deposit(){
+            var amt=prompt("Enter the money you deposit:");
+            var x=parseInt(amt);
+            total+=x;
+            document.write("<br>The money you deposit is:"+amt);
+            document.write("<br>Haraagaaguna waa:"+total);
+            
+        }
+
+        function withdraw(){
+            var drew=prompt("Enter the amount you want to withdraw:");
+            var x=parseInt(drew);
+            total-=x;
+            document.write("<br>The money withdrawed is:"+x);
+            document.write("<br>Haraagaaguna waa:"+total);
+        }
+
+        // var num=prompt("Numberada hoos ku xusan mid kamid ah dooro."+"\n"+"1.Diiwaan gelin"+"\n"+"2.Lacag dhigis"+"\n"+"3.Lacag labixid"+"\n"+"4.Haraaga");
+        // var y=parseInt(num);
+        // if(y==1){
+        //     diwaan();
+        // }
+        // else if(y==2){
+        //     deposit();
+        // }
+        // else if(y==3){
+        //     withdraw();
+        // }
+        // else if(y==4){
+        //     haraaga();
+        // }
+        
+        diwaan();
+        deposit();
+        withdraw();
+       // haraaga();
+    </script>
+</body>
+</html>
